@@ -58,3 +58,10 @@ body {
 ul {
     margin-left: 0px;
 }
+
+@media(min-width: 992px) {
+    .shrink-md {
+        margin-right: 110px;
+        margin-left: 110px;
+    }
+}
