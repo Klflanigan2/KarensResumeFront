@@ -1,4 +1,4 @@
-ar app = angular.module("ResumeApp", [
+var app = angular.module("ResumeApp", [
     'ui.router',
     'ngTouch',
     'ngAnimate',
