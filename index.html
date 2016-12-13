@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Karen's Resume</title>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<!--TODO: CHANGE FONTS -->
+<body ng-app="ResumeApp" ng-controller="homeCtrl" style="margin-right: 110px; margin-left: 110px;">
+    <br/>
+    <br/>
+    <br/>
+    <nav class="navbar-inverse" style="margin-right: 15px; margin-left: 15px;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><b>Karen Flanigan's Interactive Website</b></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"></a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><b>About This Website</b></a></li>
+
+            </ul>
+
+
+            </div><!-- /.navbar-collapse -->
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <div class="row">
+                <div class=" col-md-8">
+                    <h2 class="text-center">Hello, my name is</h2>
+                    <h1 class="text-center" id="my-name">Karen Flanigan</h1>
+                    <h3 class="text-center">I'm a science teacher turned computer programmer in Austin, TX. Please feel free to navigate this website to learn more about me!</h3>
+                </div>
+                <div class="col-md-4">
+                    <figure>
+                        <img src="images/keegsAndMom.PNG" class="center-block img-responsive" alt="Karen and Keegan">
+                        <figcaption class="text-center"> My future coder, Keegan and I.</figcaption>
+                    </figure>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class=center-block src="images/female_user.png" alt="female user icon" style="width: 100px; height: 100px">
+                    <div class="caption-center">
+                        <h3 class="text-center"><b>About Me</b></h3>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="thumbnail">
+                    <img class="center-block" src="images/code.png" alt="code icon" style="width: 100px; height: 100px">
+                    <div class="caption-center">
+                        <h3 class="text-center"><b>Coding Experience</b></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3" ng-click="openTeachingModal()">
+                <div class="thumbnail">
+                    <img class="center-block" src="images/flask.png" alt="flask icon" style="width: 100px; height: 100px">
+                    <div class="caption-center">
+                        <h3 class="text-center"><b>Teaching Experience</b></h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3" ng-click="openEducationModal()">
+                <div class="thumbnail">
+                    <img class="center-block" src="images/cap.png" alt="grad cap icon" style="width: 100px; height: 100px">
+                    <div class="caption-center">
+                        <h3 class="text-center"><b>Education</b></h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/modals/EducationModal.js"></script>
+    <script type="text/javascript" src="scripts/modals/TeachModal.js"></script>
+</footer>
+</html>
