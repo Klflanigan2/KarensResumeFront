@@ -1,1 +1,5 @@
-./idea
+#ignore webstorm idea files
+.idea
+.idea/Front.iml
+.idea/modules.xml
+.idea/workspace.xml
