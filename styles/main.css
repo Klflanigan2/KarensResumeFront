@@ -36,13 +36,14 @@ body {
     color: white;
     font-size: 25px;
 }
-#edu-body {
-    padding-top: 55px;
-    padding-bottom: 55px;
+
+.header-text {
+    padding-top: 35px;
+    padding-bottom: 25px;
     font-family: Gadugi;
     color: darkslategray;
-    font-size: 18px;
-    line-height: 16px;
+    font-size: 15px;
+    line-height: 14px;
 }
 .modal-footer {
     padding: 9px 15px;
@@ -54,7 +55,6 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-
-ul {
-    margin-left: 0px;
+li {
+    margin-bottom: 7px;
 }
