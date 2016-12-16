@@ -5,19 +5,21 @@ body {
 
 .jumb-col {
     background-color: #f2f2f2;
-    margins: 0 auto 0 auto;
 }
 
 .tn-color {
     background-color: #f2f2f2;
 }
+
 #my-name {
     color: #a50d0d;
     font-weight: bold;
 }
+
 .nav li {
     font-size: 20px;
 }
+
 .navbar-brand {
     font-size: 20px;
 }
@@ -25,6 +27,11 @@ body {
 #home-pic {
     width: 255px;
     height: 310px;
+}
+
+.shrink-md {
+    margin-left: 90px;
+    margin-right: 90px;
 }
 
 .modal-header {
@@ -68,17 +75,21 @@ body {
 li {
     margin-bottom: 0;
 }
+
 #git-link {
     color: #a50d0d;
     text-decoration: underline;
 }
+
 .thumbnail {
     cursor: pointer; cursor: hand;
 }
+
 .school {
     font-size: 18px;
     padding-top: 5px;
 }
+
 .img-responsive {
     height: 275px;
     width: 150px;
@@ -87,6 +98,7 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+
 .about-body {
     padding-top: 15px;
 }
