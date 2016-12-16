@@ -39,7 +39,20 @@ app.controller("homeCtrl",
                             templateUrl: "views/modals/TeachingModal.html",
                             controller: 'TeachModalCtrl'
                         });
+                    },
+                    openCodingModal: function () {
+                        $uibModal.open({
+                            templateUrl: "views/modals/CodingModal.html",
+                            controller: 'CodingModalCtrl'
+                        });
+                    },
+                    openAboutMeModal: function () {
+                        $uibModal.open({
+                            templateUrl: "views/modals/AboutMeModal.html",
+                            controller: 'AboutMeModalCtrl'
+                        });
                     }
+
                 });
         }
     ]
