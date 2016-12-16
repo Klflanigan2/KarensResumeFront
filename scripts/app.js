@@ -46,10 +46,10 @@ app.controller("homeCtrl",
                             controller: 'CodingModalCtrl'
                         });
                     },
-                    openTeachModal: function () {
+                    openAboutMeModal: function () {
                         $uibModal.open({
-                            templateUrl: "views/modals/TeachingModal.html",
-                            controller: 'TeachModalCtrl'
+                            templateUrl: "views/modals/AboutMeModal.html",
+                            controller: 'AboutMeModalCtrl'
                         });
                     }
 

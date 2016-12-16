@@ -21,42 +21,28 @@
     <br/>
     <nav class="navbar-inverse" style="margin-right: 15px; margin-left: 15px;">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><b>Karen Flanigan's Interactive Website</b></a>
+                <a class="navbar-brand" href="views/index.html"><b>Karen Flanigan's Resume</b></a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"></a></li>
-
+                <li><a href="views/AboutThisSite.html"><b>About This Website</b></a></li>
             </ul>
 
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><b>About This Website</b></a></li>
-
-            </ul>
-
-
-            </div><!-- /.navbar-collapse -->
+        </div>
     </nav>
 
     <div class="container-fluid">
-        <div class="jumbotron">
+        <div class="jumbotron jumb-col">
             <div class="row">
                 <div class=" col-md-8">
                     <h2 class="text-center">Hello, my name is</h2>
-                    <h1 class="text-center" id="my-name">Karen Flanigan.</h1>
+                    <h1 class="text-center" id="my-name">Karen Flanigan</h1>
                     <h3 class="text-center">I'm a science teacher turned computer programmer in Austin, TX. Please feel free to navigate this website to learn more about me!</h3>
                 </div>
                 <div class="col-md-4">
                     <figure>
-                        <img src="images/keegsAndMom.PNG" class="center-block img-responsive" alt="Karen and Keegan">
+                        <img src="images/keegsAndMom.PNG" class="center-block img-fluid" id="home-pic" alt="Karen and Keegan">
                         <figcaption class="text-center"> My future coder, Keegan and I.</figcaption>
                     </figure>
             </div>
@@ -65,21 +51,17 @@
 
 
         <div class="row">
-            <div class="col-sm-6 col-md-3">
-                <div class="thumbnail">
+            <div class="col-sm-6 col-md-3" ng-click="openAboutMeModal()">
+                <div class="thumbnail tn-color">
                     <img class=center-block src="images/female_user.png" alt="female user icon" style="width: 100px; height: 100px">
                     <div class="caption-center">
                         <h3 class="text-center"><b>About Me</b></h3>
 
                     </div>
                 </div>
-
-
-
-
             </div>
             <div class="col-sm-6 col-md-3" ng-click="openCodingModal()">
-                <div class="thumbnail">
+                <div class="thumbnail tn-color">
                     <img class="center-block" src="images/code.png" alt="code icon" style="width: 100px; height: 100px">
                     <div class="caption-center">
                         <h3 class="text-center"><b>Coding Experience</b></h3>
@@ -88,7 +70,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3" ng-click="openTeachModal()">
-                <div class="thumbnail">
+                <div class="thumbnail tn-color">
                     <img class="center-block" src="images/flask.png" alt="flask icon" style="width: 100px; height: 100px">
                     <div class="caption-center">
                         <h3 class="text-center"><b>Teaching Experience</b></h3>
@@ -97,7 +79,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-md-3" ng-click="openEducationModal()">
-                <div class="thumbnail">
+                <div class="thumbnail tn-color">
                     <img class="center-block" src="images/cap.png" alt="grad cap icon" style="width: 100px; height: 100px">
                     <div class="caption-center">
                         <h3 class="text-center"><b>Education</b></h3>
@@ -121,5 +103,6 @@
     <script type="text/javascript" src="scripts/modals/EducationModal.js"></script>
     <script type="text/javascript" src="scripts/modals/TeachModal.js"></script>
     <script type="text/javascript" src="scripts/modals/CodingModal.js"></script>
+    <script type="text/javascript" src="scripts/modals/AboutMeModal.js"></script>
 </footer>
 </html>

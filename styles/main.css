@@ -3,11 +3,14 @@ body {
     font-family: Gadugi
 }
 
-.jumbotron {
+.jumb-col {
     background-color: #f2f2f2;
     margins: 0 auto 0 auto;
 }
 
+.tn-color {
+    background-color: #f2f2f2;
+}
 #my-name {
     color: #a50d0d;
     font-weight: bold;
@@ -19,10 +22,11 @@ body {
     font-size: 20px;
 }
 
-.img-responsive {
-    width: 250px;
-    height: 330 px;
+#home-pic {
+    width: 255px;
+    height: 310px;
 }
+
 .modal-header {
     padding:9px 15px;
     border-bottom:1px solid #eee;
@@ -36,15 +40,20 @@ body {
     color: white;
     font-size: 25px;
 }
-
-.header-text {
-    padding-top: 35px;
-    padding-bottom: 25px;
-    font-family: Gadugi;
-    color: darkslategray;
-    font-size: 15px;
-    line-height: 14px;
+.modal-body {
+    padding-top: 15px;
+    padding-bottom: 8px;
+    line-height: 20px;
 }
+
+.edu-heading {
+    font-family: Gadugi;
+    color: darkslategrey;
+    font-size: 22px;
+    line-height: 4px;
+    padding-bottom: 0;
+}
+
 .modal-footer {
     padding: 9px 15px;
     background-color: #a50d0d;
@@ -55,6 +64,29 @@ body {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
 li {
-    margin-bottom: 7px;
+    margin-bottom: 0;
+}
+#git-link {
+    color: #a50d0d;
+    text-decoration: underline;
+}
+.thumbnail {
+    cursor: pointer; cursor: hand;
+}
+.school {
+    font-size: 18px;
+    padding-top: 5px;
+}
+.img-responsive {
+    height: 275px;
+    width: 150px;
+    display: inline-block;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-body {
+    padding-top: 15px;
 }
