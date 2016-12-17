@@ -68,17 +68,21 @@ body {
 li {
     margin-bottom: 0;
 }
+
 #git-link {
     color: #a50d0d;
     text-decoration: underline;
 }
+
 .thumbnail {
     cursor: pointer; cursor: hand;
 }
+
 .school {
     font-size: 18px;
     padding-top: 5px;
 }
+
 .img-responsive {
     height: 275px;
     width: 150px;
@@ -87,6 +91,14 @@ li {
     margin-left: auto;
     margin-right: auto;
 }
+
 .about-body {
     padding-top: 15px;
+}
+
+@media(min-width: 992px) {
+    .shrink-md {
+        margin-right: 110px;
+        margin-left: 110px;
+    }
 }
