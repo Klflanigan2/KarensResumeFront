@@ -1,10 +1,23 @@
+#font {
+    font-family: "Libre Franklin", sans-serif;
+}
+
 body {
     background-image: url(../images/fish.png);
-    font-family: Gadugi
+
 }
 
 .jumb-col {
     background-color: #f2f2f2;
+}
+
+#languages {
+    color: #a50d0d;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
 }
 
 .tn-color {
@@ -18,15 +31,17 @@ body {
 
 .nav li {
     font-size: 20px;
+    color: white;
 }
 
 .navbar-brand {
     font-size: 20px;
+    color: white;
 }
 
 #home-pic {
-    width: 255px;
-    height: 310px;
+    width: 249px;
+    height: 305px;
 }
 
 @media (min-width: 992px) {
@@ -37,7 +52,7 @@ body {
 }
 
 .modal-header {
-    padding:9px 15px;
+    padding:16px 15px;
     border-bottom:1px solid #eee;
     background-color: #a50d0d;
     -webkit-border-top-left-radius: 5px;
@@ -48,19 +63,23 @@ body {
     border-top-right-radius: 5px;
     color: white;
     font-size: 25px;
+
 }
+
 .modal-body {
     padding-top: 15px;
-    padding-bottom: 8px;
+    margin-bottom: 15px;
     line-height: 20px;
+
 }
 
 .edu-heading {
-    font-family: Gadugi;
+
     color: darkslategrey;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 4px;
-    padding-bottom: 0;
+    padding-bottom: 3px;
+
 }
 
 .modal-footer {
@@ -76,6 +95,7 @@ body {
 
 li {
     margin-bottom: 0;
+    margin-top: 3px;
 }
 
 #git-link {
@@ -92,6 +112,10 @@ li {
     padding-top: 5px;
 }
 
+.col-lg-4 {
+    margin-top: 0;
+}
+
 .img-responsive {
     height: 275px;
     width: 150px;
@@ -103,4 +127,16 @@ li {
 
 .about-body {
     padding-top: 15px;
+}
+
+footer {
+    display: block;
+    background-color: black;
+    color: gray;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 0;
+    padding: 12px 0 1px 0;
+    text-align: center;
 }

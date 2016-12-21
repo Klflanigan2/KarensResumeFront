@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,21 +11,20 @@
 
     <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
 </head>
 
-<!--TODO: CHANGE FONTS -->
-<body ng-app="ResumeApp" ng-controller="homeCtrl" class="shrink-md">
-    <br class="hidden-sm"/>
-    <br class="hidden-sm"/>
+
+<body ng-app="ResumeApp" ng-controller="indexCtrl" class="shrink-md" id="font">
     <br class="hidden-sm"/>
     <nav class="navbar-inverse" style="margin-right: 15px; margin-left: 15px;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="views/index.html"><b>Karen Flanigan's Resume</b></a>
+                <a class="navbar-brand" ui-sref="home"><b>Karen Flanigan's Resume</b></a>
             </div>
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="views/AboutThisSite.html"><b>About This Website</b></a></li>
+                <li><a ui-sref="about"><b>About This Website</b></a></li>
             </ul>
 
         </div>
@@ -34,19 +32,9 @@
 
     <div class="container-fluid">
         <div class="jumbotron jumb-col">
-            <div class="row">
-                <div class=" col-md-8">
-                    <h2 class="text-center">Hello, my name is</h2>
-                    <h1 class="text-center" id="my-name">Karen Flanigan</h1>
-                    <h3 class="text-center">I'm a science teacher turned computer programmer in Austin, TX. Please feel free to navigate this website to learn more about me!</h3>
-                </div>
-                <div class="col-md-4">
-                    <figure>
-                        <img src="images/keegsAndMom.PNG" class="center-block img-fluid" id="home-pic" alt="Karen and Keegan">
-                        <figcaption class="text-center"> My future coder, Keegan and I.</figcaption>
-                    </figure>
-            </div>
-            </div>
+            <ui-view>
+
+            </ui-view>
         </div>
 
 
@@ -93,6 +81,10 @@
 </body>
 
 <footer>
+    <p>
+        Please contact me at KLFlanigan2@gmail.com
+    </p>
+
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>

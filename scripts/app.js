@@ -6,11 +6,17 @@ var app = angular.module("ResumeApp", [
 ]);
 
 app.config(function ($stateProvider, $urlRouterProvider) {
-    // $urlRouterProvider.otherwise('/home')
-    // $stateProvider
-    //     .state({
-    //
-    //     })
+    $urlRouterProvider.otherwise('/home');
+    $stateProvider
+        .state('home', {
+            url: '/home',
+            templateUrl: 'views/HomePageView.html',
+            controller: "homeCtrl"
+        })
+        .state('about', {
+            url:'/about',
+            templateUrl: 'views/AboutSiteView.html'
+        })
     console.log("Configured.");
 });
 
@@ -18,14 +24,23 @@ app.run(function () {
     console.log("Running.");
 });
 
-app.controller("homeCtrl",
+app.controller('homeCtrl', [
+    '$scope',
+    function (
+        $scope
+    ) {
+        angular.extend($scope, {
+
+        });
+    }
+]);
+
+app.controller("indexCtrl",
     [
         '$scope',
         '$uibModal',
-        function (
-            $scope,
-            $uibModal
-        ) {
+        function ($scope,
+                  $uibModal) {
             angular.extend($scope,
                 {
                     openEducationModal: function () {
