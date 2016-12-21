@@ -44,9 +44,11 @@ h4 {
     height: 305px;
 }
 
-.shrink-md {
-    margin-left: 90px;
-    margin-right: 90px;
+@media (min-width: 992px) {
+    .shrink-md {
+        margin-left: 90px;
+        margin-right: 90px;
+    }
 }
 
 .modal-header {
