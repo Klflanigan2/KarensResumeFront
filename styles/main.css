@@ -3,7 +3,7 @@
 }
 
 body {
-    background-image: url(../images/fish.png);
+    background-image: url("https://s3.amazonaws.com/aws-website-karensresum-73zwa/Images/fish.png");
 
 }
 
